@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Schoolbox Custom",
+  "version": "1.3",
+  "description": "Adds dark mode and rounded corners to KCC.",
+  "icons": {
+      "128": "/assets/logo.png",
+      "16": "/assets/logo.png",
+      "48": "/assets/logo.png"
+   },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "matches": ["*://compass.kingscollege.qld.edu.au/*"]
+  }]
+
+}
